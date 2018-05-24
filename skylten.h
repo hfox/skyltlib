@@ -26,12 +26,12 @@
 extern "C" {
 #endif
 
-int   init_skylt(void);
-void  shutdown_skylt(int handle);
-char *get_skyltmem(int handle);
-void  set_mode(int handle,int mode);
-void  set_bank(int handle,int bank);
-int   get_bank(int handle);
+long long unsigned int	init_skylt(void);
+void		shutdown_skylt(long long unsigned int handle);
+char		*get_skyltmem(long long unsigned int handle);
+void		set_mode(long long unsigned int handle,int mode);
+void		set_bank(long long unsigned int handle,int bank);
+int			get_bank(long long unsigned int handle);
 
 
 #ifdef __cplusplus

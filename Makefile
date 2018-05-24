@@ -1,5 +1,5 @@
 
-default : font.o graphics.o skyltreal.o timer.o
+default : font.o graphics.o skyltreal.o skyltsim.o timer.o
 
 all : clean default
 
@@ -8,3 +8,4 @@ clean :
 
 .c.o : $<
 	gcc -c $<
+

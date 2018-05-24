@@ -73,6 +73,8 @@ void load_font(char *filename)
 		font_table['|'] = 658;
 		
 		fclose(file);
+	} else {
+		printf("font open failed\n");
 	}
 
 }
